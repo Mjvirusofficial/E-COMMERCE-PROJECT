@@ -4,6 +4,11 @@
     cursor: pointer;
 }
 
+.t-price{
+    /* font-size: 1.4rem; */
+    text-align: end;
+    margin-right: 92px;
+}
 
 
 .forcard{
@@ -20,5 +25,13 @@
     .cart-image{
         height: 40vh;
     }
+
+    .t-price{
+        font-size: 1.4rem;
+        text-align: end;
+        margin: 5px;
+    }
   }
+
+
 

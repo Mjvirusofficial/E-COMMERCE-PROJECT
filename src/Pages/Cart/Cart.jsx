@@ -96,11 +96,9 @@ useEffect(() => {
 
 
             </div>
-            <div className="container">
-                <h1 className="" style={{ textAlign: 'right' }}>
+                <h1 className="t-price" >
                     Total Price:- &#8377;{cartTotal}
                 </h1>
-            </div>
         </div>
 
 

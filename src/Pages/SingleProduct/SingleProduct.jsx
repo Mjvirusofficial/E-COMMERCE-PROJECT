@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { NavLink, useParams } from 'react-router-dom'
+import { toast } from 'react-toastify';
 import { useCart } from 'react-use-cart';
 // import { useCart } from 'react-use-cart';
 
@@ -11,9 +12,13 @@ function SingleProduct() {
 
     const { productId } = useParams()
 
-    const { name } = useParams();
+    // const { name } = useParams();
 
     const [Data, setData] = useState();
+
+    function add(){
+        toast.success('Item added successfully')
+    }
 
 
     useEffect(() => {
@@ -25,7 +30,7 @@ function SingleProduct() {
             console.log(i.id)
             sessionStorage.setItem('id',i.id)
         })
-    }, [])
+    })
 
     return (
         <>
@@ -44,7 +49,7 @@ function SingleProduct() {
                     <h2 className='card-title' style={{ color: 'black' }}>&#8377;{Data && Data.price}</h2>
                     <p className='card-title' style={{ color: 'black' }}>{Data && Data.description}</p>
 
-                    <NavLink onClick={() => addItem(Data && Data)}  className="nav-link active btn btn-primary" aria-current="page" to={`/cart`}><h2 className='learn'>Add to cart</h2></NavLink>
+                    <NavLink onClick={() => addItem(Data && Data)}  className="nav-link active btn btn-primary" aria-current="page" to={`/cart`}><h2 onClick={add} className='learn'>Add to cart</h2></NavLink>
                 </div>
             </div>
         </div>

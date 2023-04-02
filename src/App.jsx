@@ -10,12 +10,16 @@ import Auth from './Auth/Auth'
 import Product from './Pages/Product/Product'
 import SingleProduct from './Pages/SingleProduct/SingleProduct'
 import Cart from './Pages/Cart/Cart'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
     <div>
     
       <div>
+      <ToastContainer position='top-center'/>
+
       <Navbar/>
         <Routes>
             <Route path='/' element={<Home/>}/>

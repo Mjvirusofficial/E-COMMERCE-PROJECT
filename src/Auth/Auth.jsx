@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Auth.css';
 // import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 function Auth() {
 
@@ -76,6 +77,8 @@ function Register(){
   localStorage.setItem('username', data.username )
   localStorage.setItem('password', data.password )
   setShow(false) 
+  toast.success('Registration Successfull')
+
 }
 
 
@@ -83,9 +86,17 @@ function Login(){
    let username = localStorage.getItem('username')
    let password = localStorage.getItem('password')
 
-   if(username === data.username && password === data.password){
-    alert('login Successfully')
+   
+    if(username === data.username && password === data.password){
+    toast.success('Login Successfully')
     navigate('/service')
+   } else if(data.username === '' || data.username == null){
+    toast.warning('Username & password required')
+   }
+   
+   else{
+    toast.error('Credential not valid')
+    setShow(!false) 
    }
 
 }
@@ -115,7 +126,7 @@ function Login(){
                 <input  onChange={(e) => { setData({ ...data, username: e.target.value }) }} type="text" className='form-control' autoFocus  placeholder='Username' required />
               </div>
               {show && <div className="input-group">
-                <input  onChange={(e) => { setData({ ...data, email: e.target.value }) }} type="email" className='form-control' placeholder='Email' />
+                <input  onChange={(e) => { setData({ ...data, email: e.target.value }) }} type="email" className='form-control' placeholder='Email' required />
               </div>}
               <div className="input-group">
                 <input  onChange={(e) => { setData({ ...data, password: e.target.value }) }} type="password" className='form-control' placeholder='Password' required />
@@ -126,7 +137,7 @@ function Login(){
                   show ? <button onClick={Register} type="" className='btn btn-success '>{show ? "Register" : "Login"}</button> : <button onClick={Login} type="button" className='btn btn-primary '>{show ? "Register" : "Login"}</button>
                 }
 
-                <span onClick={WhenClick} className='m-2' style={{ cursor: 'pointer' }}>
+                <span onClick={WhenClick} className='m-2 mj ' style={{ cursor: 'pointer' }}>
                   {
                     show ? 'Already have an account? Login' : "Don't have an account? Register"
                   }
