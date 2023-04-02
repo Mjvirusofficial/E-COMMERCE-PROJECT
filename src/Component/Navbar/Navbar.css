@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.auth{
+    font-size: 20px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 5px 15px;
+    border-radius: 6px;
+    transition: 0.5s;
+    border: 2px solid green;
+    color: black;
+    background-color: white;
+}
+
+
+
+.auth:hover{
+    background-color: green;
+    color: white !important;
+}
+
+.pages:hover{
+    border-bottom: 2px solid green;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menu_active{
+    font-weight: bold;
+    border-bottom: 1px solid red;
+}
+
+.virus{
+    color: green;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menu{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+

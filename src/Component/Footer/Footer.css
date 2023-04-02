@@ -1,0 +1,20 @@
+
+/* .text-center{
+    background-color: green;
+} */
+
+.text {
+    /* background-color:rgb(126, 126, 223); */
+    background-color: green;
+    text-decoration: none;
+}
+
+.text a{
+    text-decoration: none;
+    color: white;
+}
+
+.text a:hover{
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Contact part */
+
+form {
+    text-align:center ;
+}
+form input {
+    border-radius:5px;
+    margin-top:10px;
+    border:1px solid #000;
+    width:300px;
+    height:30px;
+}
+textarea {
+    border-radius:5px;
+    margin-top:10px;
+    border:1px solid #000;
+    width:300px;
+    height:100px;
+}
+.submit {
+    background-color:#000;
+    color:#fff;
+}
+
+
+.navbar-brand{
+    font-size: 30px;
+    font-family: 'Combo', cursive;
+}
+
+/* Contact */
+.button{
+    background-color: green;
+    border: 2px solid black;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+ }
+ 
+.button_div{
+    text-align: center;
+}
+
+.div{
+    border: 2px solid green;
+}
+
+.start_shop{
+    font-weight: 500;
+    font-size: 16px;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    border: 2px solid green;
+    color: black;
+ }
+ 
+ .start_shop:hover{
+ background-color: green;
+ color: white;
+ }
+
+ #para{
+    margin-top: 20vh;
+ }
+
+
+
+
+
+body{
+    
+}
+
