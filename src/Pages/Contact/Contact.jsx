@@ -9,6 +9,8 @@ function Contact() {
       </div>
        
         <div className="container ">
+        <form action="https://formspree.io/f/mnqryjzv" method='POST' >
+
           <div className="row">
             <div className="col-10 col-md-6 col-lg-5 mx-auto mb-2">
               <div class="mt-4 ">
@@ -32,6 +34,7 @@ function Contact() {
               </div>
             </div>
           </div>
+          </form>
         </div>
         
       </div>

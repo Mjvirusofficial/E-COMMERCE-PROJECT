@@ -3,7 +3,7 @@ import { NavLink, useParams } from 'react-router-dom'
 import { toast } from 'react-toastify';
 import { useCart } from 'react-use-cart';
 // import { useCart } from 'react-use-cart';
-
+import './SingleProduct.css'
 
 function SingleProduct() {
 
@@ -49,7 +49,7 @@ function SingleProduct() {
                     <h2 className='card-title' style={{ color: 'black' }}>&#8377;{Data && Data.price}</h2>
                     <p className='card-title' style={{ color: 'black' }}>{Data && Data.description}</p>
 
-                    <NavLink onClick={() => addItem(Data && Data)}  className="nav-link active btn btn-primary" aria-current="page" to={`/cart`}><h2 onClick={add} className='learn'>Add to cart</h2></NavLink>
+                    <NavLink onClick={() => addItem(Data && Data)}  className="nav-link active btn btn-primary sing" aria-current="page" to={`/cart`}><h2 onClick={add}  className='learn'>Add to cart</h2></NavLink>
                 </div>
             </div>
         </div>

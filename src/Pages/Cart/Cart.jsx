@@ -49,15 +49,16 @@ useEffect(() => {
 
 
     return (
-        <div style={{ marginTop: '90px' }}>
-            <div className="container-fluid" >
-                <h1 className='container heading'>My Cart</h1>
-               <h1 className='container'>Total Items: {totalUniqueItems}</h1>
+        <div >
+            <div className="container col-12" >
+                <div className="row">
+                <h2 className='container mt-4'>My Cart<br/>Total Items: {totalUniqueItems}</h2>
+</div>
                 {/* <h1 className='container' style={{alignItems:'right'}}>Total Items: {totalItems}</h1> */}
 
             </div>
 
-            <div className="container col-12 shopCartBox forcard">
+            <div className="container col-11 shopCartBox forcard">
 
                 <div className="row py-3">
 
